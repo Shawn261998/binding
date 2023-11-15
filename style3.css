@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{ 
+    background: #FF3D00;
+}
+.top-header { 
+    font-family: PT sans;
+    font-weight: 300;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    margin-left: 60px;
+    padding: 30px;
+    justify-content: flex-start
+}
+
+p{ 
+    padding: 10px;
+}
+
+h1 { 
+    font-family: PT Sans;
+    font-size: 130px;
+    color: black;
+    text-transform: uppercase;
+    padding-left: 80px;
+    padding-right: 160px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.subtitle { 
+    font-family: merriweather;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 560px;
+}
+
+nav { 
+    font-family: Merriweather;
+    color: white;
+    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    border-width: 3px;
+    width: 30%;
+    margin-right: 80px;
+    margin-left: 1000px;
+}
+
+h2 { 
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 100px;
+    margin-top: 50px;
+    padding-left: 80px;
+    text-align: left;
+}
+
+.intro { 
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.numerical{ 
+    display: none;
+}
+
+.intro-body-text-para{ 
+    padding-left: 80px;
+}
+.intro-body { 
+    text-align: left;
+    font-family: PT Sans;
+    color: white;
+}
+
+.intro-body-text { 
+
+    padding-right: 160px;
+    padding-left: 80px;
+}
+
+
