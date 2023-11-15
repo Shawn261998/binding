@@ -4,7 +4,6 @@
 body { 
     font-family: bitter;
     font-size: 24px;
-
 }
 
 .top-header { 
@@ -60,17 +59,39 @@ nav {
 
 .numerical{ 
     font-family: Abril fatface;
-    font-size: 500px;
+    font-size: 600px;
     color:black;
     -webkit-text-stroke: 2px white;
     margin-left: 50px;
     text-align: left;
+    margin-top: -150px;
+    margin-right: -120px;
+    margin-left: 150px;
 }
 
+h2 { 
+    font-family: Space Grotesk;
+    font-size: 80px;
+}
 aside { 
     text-align: left;
     font-family: Space grotesk;
     color: white;
     float: right;
     width: 60%;
+}
+
+.intro-body-text-para{ 
+    margin: 20px;
+}
+.intro-body { 
+    text-align: left;
+    font-family: Space grotesk;
+    color: white;
+}
+
+.intro-body-text { 
+    margin-top: -100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
