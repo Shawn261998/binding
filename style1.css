@@ -142,11 +142,12 @@ header {
     padding: 30px;
     margin: calc(1* var(--spacing))
 }
-hr {
+.white-line{
     border: 2px solid;
     margin: 20px 0; 
     color: var(--darkgrey);
 }
+
 .subtitle { 
     font-family: CabinetGrotesk-Medium;
     font-size: calc(3 * var(--typography-base));
@@ -201,7 +202,7 @@ nav {
 
 h2 { 
     font-family: CabinetGrotesk-Bold;
-    font-size: calc(6 * var(--typography-base));
+    font-size: calc(4 * var(--typography-base));
     color: var(--white);
     margin-top: calc(1* var(--spacing));
     padding-top: calc(8* var(--spacing));
@@ -212,7 +213,7 @@ h2 {
 
 .body-text { 
     font-family: bitter;
-    font-size: calc(.9 * var(--typography-base));
+    font-size: calc(.86 * var(--typography-base));
     color: var(--white);
     padding-left: calc(7 * var(--spacing));
     padding-right: calc(5 * var(--spacing));
@@ -220,9 +221,24 @@ h2 {
 }
 .body-text-last {
     font-family: bitter;
-    font-size: calc(.9 * var(--typography-base));
+    font-size: calc(.86 * var(--typography-base));
     color: var(--white);
     padding-left: calc(7 * var(--spacing));
     padding-right: calc(5 * var(--spacing));
+    padding-bottom: calc(5 * var( --spacing));
+}
+
+.black-line{
+    border: 2px solid;
+    margin: 20px 0; 
+    color: var(--white);
+}
+blockquote { 
+    font-family: bitter;
+    font-size: calc(2 * var(--typography-base));
+    color: var(--white);
+    text-align: center;
+    padding-left: calc(9 * var(--spacing));
+    padding-right: calc(9 * var(--spacing));
     padding-bottom: calc(5 * var( --spacing));
 }
