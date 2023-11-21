@@ -104,6 +104,7 @@
     --orange: #FF3D00;
     --white: #FFFFFF;
     --darkgrey: #0B0B0B;
+    --darkblue: #002F66;
 
     --inset--top:    -0.2em;
 	--inset--bottom: -0.23em;
@@ -142,12 +143,12 @@ header {
     padding: 30px;
     margin: calc(1* var(--spacing))
 }
-.white-line{
+
+.black-line{
     border: 2px solid;
     margin: 20px 0; 
     color: var(--darkgrey);
 }
-
 .subtitle { 
     font-family: CabinetGrotesk-Medium;
     font-size: calc(3 * var(--typography-base));
@@ -179,7 +180,8 @@ nav {
 .card { 
     background-color: var(--darkgrey);
     border-radius: 30px;
-    margin: calc(1* var(--spacing))
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
 }
 .numerical{ 
 	display: flow-root;
@@ -228,11 +230,17 @@ h2 {
     padding-bottom: calc(5 * var( --spacing));
 }
 
-.black-line{
+.white-line{
     border: 2px solid;
-    margin: 20px 0; 
+    /* margin: 20px 0;  */
     color: var(--white);
+    display: block;
+    margin: 0 auto; /* Center the line */
+    width: 80%; /* Set the width of the line */
+    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-bottom: 20px; 
 }
+
 blockquote { 
     font-family: bitter;
     font-size: calc(2 * var(--typography-base));
@@ -241,4 +249,49 @@ blockquote {
     padding-left: calc(9 * var(--spacing));
     padding-right: calc(9 * var(--spacing));
     padding-bottom: calc(5 * var( --spacing));
+}
+
+.card-2 { 
+    background-color: var(--darkblue);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
+}
+.numerical-2  {
+	display: flow-root;
+    width: fit-content;
+    font-family: Abril fatface;
+    font-size: 400px;
+    color: var(--darkblue);
+    -webkit-text-stroke: 2px white;
+    float: left;
+    padding-top: calc(5* var(--spacing));
+    padding-left: calc(8* var(--spacing));
+    padding-right: calc(5* var(--spacing));
+    margin: calc(3* var(--spacing));
+    margin-left: var(--inset--left);
+    margin-top: var(--inset--top);
+    margin-bottom: 200%;
+}
+
+h3 { 
+    font-family: CabinetGrotesk-Medium;
+    color: var(--white);
+    padding: calc(1* var(--spacing));
+}
+.chapter{ 
+    display: block;
+    border-radius: 30px;
+    padding: calc(4* var(--spacing));
+    float: var(--inset--left);
+}
+
+li {
+    list-style:disc;
+    list-style-position: outside;
+    font-family: bitter;
+    font-size: calc(.86 * var(--typography-base));
+    color: var(--white);
+    padding: calc(.5* var(--spacing));
+    padding-left: calc(4* var(--spacing));
 }
