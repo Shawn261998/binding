@@ -213,3 +213,10 @@ blockquote {
     color: var(--white);
     text-align: left;
 }
+
+.card-3 { 
+    background-color: var(--green);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(3* var(--spacing))
+}

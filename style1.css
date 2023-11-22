@@ -305,7 +305,7 @@ h3 {
 
 li {
     list-style:disc;
-    list-style-position: inside;
+    list-style-position: outside;
     font-family: bitter;
     font-size: calc(.86 * var(--typography-base));
     color: var(--white);
