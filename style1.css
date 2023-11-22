@@ -400,3 +400,26 @@ li {
     margin-right: calc(2* var(--spacing));
     margin-left: calc(2* var(--spacing));
 }
+
+.conclusion {
+    background-color: var(--darkgrey);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
+}
+.conclusion-body {
+    font-family: bitter;
+    font-size: calc(.86 * var(--typography-base));
+    color: var(--white);
+    padding-left: calc(7 * var(--spacing));
+    padding-right: calc(5 * var(--spacing));
+    padding-bottom: calc(8 * var( --spacing));
+}
+
+.chapter-card { 
+    width: auto;
+    background-color: var(--darkgrey);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
+}
