@@ -201,3 +201,15 @@ h2 {
     padding-right: calc(5 * var(--spacing));
     padding-bottom: calc(5 * var( --spacing));
 }
+
+blockquote { 
+    font-family: CabinetGrotesk-Medium;
+    font-style: italic;
+    font-size: calc(2 * var(--typography-base));
+    padding-left: calc(7 * var(--spacing));
+    padding-right: calc(5 * var(--spacing));
+    padding-bottom: calc(5 * var( --spacing));
+    padding-top: calc(5 * var( --spacing));
+    color: var(--white);
+    text-align: left;
+}
