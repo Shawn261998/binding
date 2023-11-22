@@ -104,7 +104,12 @@
     --orange: #FF3D00;
     --white: #FFFFFF;
     --darkgrey: #0B0B0B;
-    --darkblue: #002F66;
+    --blue: #002F66;
+    --darkblue: #002249;
+    --green: #03954f;
+    --darkgreen:#04783B;
+    --red: #C0000F;
+    --darkred: #7C0004;
 
     --inset--top:    -0.2em;
 	--inset--bottom: -0.23em;
@@ -204,15 +209,14 @@ nav {
 
 h2 { 
     font-family: CabinetGrotesk-Bold;
-    font-size: calc(4 * var(--typography-base));
+    font-size: calc(5 * var(--typography-base));
     color: var(--white);
     margin-top: calc(1* var(--spacing));
     padding-top: calc(8* var(--spacing));
     padding-left: calc(8* var(--spacing));
-    padding-right: calc(6* var(--spacing));
-    padding-bottom: calc( 2 * var(--spacing));
+    padding-right: calc(8* var(--spacing));
+    padding-bottom: calc( 5 * var(--spacing));
 }
-
 .body-text { 
     font-family: bitter;
     font-size: calc(.86 * var(--typography-base));
@@ -232,12 +236,11 @@ h2 {
 
 .white-line{
     border: 2px solid;
-    /* margin: 20px 0;  */
     color: var(--white);
     display: block;
-    margin: 0 auto; /* Center the line */
-    width: 80%; /* Set the width of the line */
-    margin-top: 20px; /* Adjust the top margin as needed */
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px; 
     margin-bottom: 20px; 
 }
 
@@ -252,7 +255,7 @@ blockquote {
 }
 
 .card-2 { 
-    background-color: var(--darkblue);
+    background-color: var(--blue);
     border-radius: 30px;
     margin: calc(1* var(--spacing));
     padding: calc(1* var(--spacing))
@@ -262,7 +265,7 @@ blockquote {
     width: fit-content;
     font-family: Abril fatface;
     font-size: 400px;
-    color: var(--darkblue);
+    color: var(--blue);
     -webkit-text-stroke: 2px white;
     float: left;
     padding-top: calc(5* var(--spacing));
@@ -271,27 +274,129 @@ blockquote {
     margin: calc(3* var(--spacing));
     margin-left: var(--inset--left);
     margin-top: var(--inset--top);
-    margin-bottom: 200%;
+    margin-bottom: var(--inset--bottom);
 }
 
 h3 { 
     font-family: CabinetGrotesk-Medium;
     color: var(--white);
-    padding: calc(1* var(--spacing));
+    padding: calc(2* var(--spacing));
 }
-.chapter{ 
+
+.card-2-chapter-first{
     display: block;
+    background-color: var(--darkblue);
     border-radius: 30px;
+    margin-top: calc(10* var(--spacing));
     padding: calc(4* var(--spacing));
-    float: var(--inset--left);
+    margin-right: calc(2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
+}
+.card-2-chapter{ 
+    display: block;
+    background-color:var(--darkblue);
+    border-radius: 30px;
+    margin-top: calc(4* var(--spacing));
+    margin-bottom: calc(4* var(--spacing));
+    padding: calc(4* var(--spacing));
+    margin-right: calc(2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
 }
 
 li {
     list-style:disc;
-    list-style-position: outside;
+    list-style-position: inside;
     font-family: bitter;
     font-size: calc(.86 * var(--typography-base));
     color: var(--white);
     padding: calc(.5* var(--spacing));
     padding-left: calc(4* var(--spacing));
+}
+
+.card-3 { 
+    background-color: var(--green);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
+}
+
+.numerical-3  {
+	display: flow-root;
+    width: fit-content;
+    font-family: Abril fatface;
+    font-size: 400px;
+    color: var(--green);
+    -webkit-text-stroke: 2px white;
+    float: left;
+    padding-top: calc(5* var(--spacing));
+    padding-left: calc(8* var(--spacing));
+    padding-right: calc(5* var(--spacing));
+    margin: calc(3* var(--spacing));
+    margin-left: var(--inset--left);
+    margin-top: var(--inset--top);
+    margin-bottom: var(--inset--bottom);
+}
+
+.card-3-chapter-first{
+    display: block;
+    background-color:04783B;
+    border-radius: 30px;
+    margin-top: calc(10* var(--spacing));
+    padding: calc(4* var(--spacing));
+    margin-right: calc(2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
+}
+.card-3-chapter{ 
+    display: block;
+    background-color: #04783B;
+    border-radius: 30px;
+    margin-top: calc(4* var(--spacing));
+    margin-bottom: calc(4* var(--spacing));
+    padding: calc(4* var(--spacing));
+    margin-right: calc(2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
+}
+
+.card-4 { 
+    background-color: var(--red);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
+}
+
+.numerical-4  {
+	display: flow-root;
+    width: fit-content;
+    font-family: Abril fatface;
+    font-size: 400px;
+    color: var(--red);
+    -webkit-text-stroke: 2px white;
+    float: left;
+    padding-top: calc(5* var(--spacing));
+    padding-left: calc(8* var(--spacing));
+    padding-right: calc(5* var(--spacing));
+    margin: calc(3* var(--spacing));
+    margin-left: var(--inset--left);
+    margin-top: var(--inset--top);
+    margin-bottom: var(--inset--bottom);
+}
+
+.card-4-chapter-first{
+    display: block;
+    background-color:#7C0004;
+    border-radius: 30px;
+    margin-top: calc(10* var(--spacing));
+    padding: calc(4* var(--spacing));
+    margin-right: calc(2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
+}
+.card-4-chapter{ 
+    display: block;
+    background-color:#7C0004;
+    border-radius: 30px;
+    margin-top: calc(4* var(--spacing));
+    margin-bottom: calc(4* var(--spacing));
+    padding: calc(4* var(--spacing));
+    margin-right: calc(2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
 }
