@@ -201,8 +201,8 @@ header {
     display: block;
     background-color: var(--darkgrey);
     border-radius:  var(--border-radius) ;
-    padding-right:  calc(3* var(--spacing));
-    padding-left:  calc(3* var(--spacing));
+    padding-right:  calc(1.5* var(--spacing));
+    padding-left:  calc(1.5* var(--spacing));
     padding-top: var(--spacing);
     padding-bottom: calc(3*var(--spacing));
     margin: calc(1* var(--spacing))
@@ -295,8 +295,8 @@ h3 {
     padding: calc( 2* var(--spacing));
     margin-top: calc(3 * var(--spacing));
 }
-
 li {
+    list-style: disk;
     list-style-position: outside;
     font-family: bitter;
     font-size: calc(.86 * var(--typography-base));

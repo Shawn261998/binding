@@ -211,20 +211,7 @@ body {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.grid-container {
-    padding: 0px;
-}
-
-.left-container {
-    order: 1 ;
-}
-
-.right-container {
-    order:  2;
+    grid-template-columns: 1fr;
 }
 
 /* Additional styling for your existing elements goes here */
