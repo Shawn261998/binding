@@ -110,7 +110,7 @@
     --white: #FFFFFF;
     --darkgrey: #0B0B0B;
     --grey:#171717;
-    --light: #7468FF;
+    --light: #0300A9;
     --darkblue: #1400FF;
     --green: #00AA30;
     --darkgreen:#04783B;
@@ -141,6 +141,11 @@ nav {
 
 a { 
     color: #FFFFFF;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .card-chapter { 
@@ -204,16 +209,36 @@ h2 {
     margin-top: 2rem;
     letter-spacing: .5px;
 }
-
-body {
-    margin: 0;
+blockquote { 
+    font-family: bitter;
+    font-style: italic;
+    font-size: calc(1.2* var(--typography-base));
+    color: var(--white);
+    margin-top: calc(2* var(--spacing));
+    line-height: 1.5;
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+.author { 
+    display: block;
+    background-color: var(--light);
+    border-radius:  var(--border-radius) ;
+    padding: calc(1 * var(--spacing));
+    margin-top: calc(3 * var(--spacing));
 }
 
-/* Additional styling for your existing elements goes here */
+.author-text { 
+    font-family: bitter;
+    font-size: var(--typography-base);
+    color: var(--white);
+    line-height: 1.5;
+    margin: calc(.5 * var(--spacing));
+    letter-spacing: .5px;
+}
 
+strong { 
+    font-weight: bold;
+}
 
+#underline { 
+    text-decoration: underline;
+}

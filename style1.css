@@ -306,47 +306,6 @@ li {
     padding-top: calc(.2* var(--spacing));
 }
 
-.card-3-chapter-first{
-    display: block;
-    background-color:04783B;
-    border-radius: 30px;
-    margin-top: calc(10* var(--spacing));
-    padding: calc(4* var(--spacing));
-    margin-right: calc(2* var(--spacing));
-    margin-left: calc(2* var(--spacing));
-}
-.card-3-chapter{ 
-    display: block;
-    background-color: #04783B;
-    border-radius: 30px;
-    margin-top: calc(4* var(--spacing));
-    margin-bottom: calc(4* var(--spacing));
-    padding: calc(4* var(--spacing));
-    margin-right: calc(2* var(--spacing));
-    margin-left: calc(2* var(--spacing));
-}
-
-
-.card-4-chapter-first{
-    display: block;
-    background-color:#7C0004;
-    border-radius: 30px;
-    margin-top: calc(10* var(--spacing));
-    padding: calc(4* var(--spacing));
-    margin-right: calc(2* var(--spacing));
-    margin-left: calc(2* var(--spacing));
-}
-.card-4-chapter{ 
-    display: block;
-    background-color:#7C0004;
-    border-radius: 30px;
-    margin-top: calc(4* var(--spacing));
-    margin-bottom: calc(4* var(--spacing));
-    padding: calc(4* var(--spacing));
-    margin-right: calc(2* var(--spacing));
-    margin-left: calc(2* var(--spacing));
-}
-
 .conclusion {
     background-color: var(--darkgrey);
     border-radius: 30px;
@@ -360,12 +319,4 @@ li {
     padding-left: calc(7 * var(--spacing));
     padding-right: calc(5 * var(--spacing));
     padding-bottom: calc(8 * var( --spacing));
-}
-
-.chapter-card { 
-    width: auto;
-    background-color: var(--darkgrey);
-    border-radius: 30px;
-    margin: calc(1* var(--spacing));
-    padding: calc(1* var(--spacing))
 }
