@@ -109,11 +109,12 @@
     --orange: #FF3D00;
     --white: #FFFFFF;
     --darkgrey: #0B0B0B;
-    --blue: #1B75BB;
+    --grey:#171717;
+    --light: #7468FF;
     --darkblue: #1400FF;
-    --green: #03954f;
+    --green: #00AA30;
     --darkgreen:#04783B;
-    --red: #C0000F;
+    --purple: #8000FF;
     --darkred: #7C0004;
 
     --inset--top:    -0.2em;
@@ -125,7 +126,7 @@
 nav { 
     font-family: bitter;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: var(--typography-base);
     padding: var(--spacing);
     background-color: var(--darkgrey);
@@ -135,7 +136,7 @@ nav {
     border-width: 2px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin: calc(1* var(--spacing))
+    margin: calc(1* var(--spacing));
 }
 
 a { 
@@ -206,6 +207,16 @@ header {
     padding-bottom: calc(3*var(--spacing));
     margin: calc(1* var(--spacing))
 }
+.card:nth-child(2) {
+    background-color: var(--grey);
+}
+.card:nth-child(3) {
+    background-color: var(--grey);
+}
+.card:nth-child(4) {
+    background-color: var(--grey);
+}
+
 
 h2 { 
     font-family: CabinetGrotesk-Bold;
@@ -214,8 +225,9 @@ h2 {
     line-height: 1.2;
 }
 h2:nth-child(2) {
-    margin-top: calc(4* var(--spacing))
+    margin-top: calc(4* var(--spacing));
 }
+
 .body-text { 
     font-family: bitter;
     font-size: var(--typography-base);
@@ -238,12 +250,12 @@ blockquote {
     color: var(--white);
     text-align: center;
 }
-.numerical-1  {
+.numerical {
 	display: flow-root;
     width: fit-content;
     font-family: Abril fatface;
     font-size: calc(9* var(--typography-base));
-    color: var(--darkgrey);
+    color: var(--grey);
     -webkit-text-stroke: 2px white;
     float: left;
     margin-right: calc(2*var(--spacing));
@@ -257,41 +269,41 @@ h3 {
     letter-spacing: .5px;
     margin-bottom: calc(1* var(--spacing));
 }
-.card-2-chapter{ 
+.card-chapter-1{ 
     display: block;
     background-color: var(--darkblue);
     border-radius:  var(--border-radius) ;
-    padding: var(--spacing);
-    padding-left: calc( 1* var(--spacing));
-    margin-top: calc(2.8 * var(--spacing));
+    padding: calc( 2* var(--spacing));
+    margin-top: calc(3 * var(--spacing));
+}
+.card-chapter-1:hover {
+    filter: drop-shadow(0 0 0.75rem var(--grey));
+  }
+.card-chapter-2{ 
+    display: block;
+    display: block;
+    background-color: var(--green);
+    border-radius:  var(--border-radius) ;
+    padding: calc( 2* var(--spacing));
+    margin-top: calc(3 * var(--spacing));
+}
+.card-chapter-3{ 
+    display: block;
+    display: block;
+    background-color: var(--purple);
+    border-radius:  var(--border-radius) ;
+    padding: calc( 2* var(--spacing));
+    margin-top: calc(3 * var(--spacing));
 }
 
 li {
-    list-style:disc;
-    list-style-position: inside;
+    list-style-position: outside;
     font-family: bitter;
     font-size: calc(.86 * var(--typography-base));
     color: var(--white);
     line-height: 1.5;
     letter-spacing: .5px;
     padding-top: calc(.2* var(--spacing));
-}
-
-.numerical-3  {
-	display: flow-root;
-    width: fit-content;
-    font-family: Abril fatface;
-    font-size: 400px;
-    color: var(--green);
-    -webkit-text-stroke: 2px white;
-    float: left;
-    padding-top: calc(5* var(--spacing));
-    padding-left: calc(8* var(--spacing));
-    padding-right: calc(5* var(--spacing));
-    margin: calc(3* var(--spacing));
-    margin-left: var(--inset--left);
-    margin-top: var(--inset--top);
-    margin-bottom: var(--inset--bottom);
 }
 
 .card-3-chapter-first{
@@ -314,22 +326,6 @@ li {
     margin-left: calc(2* var(--spacing));
 }
 
-.numerical-4  {
-	display: flow-root;
-    width: fit-content;
-    font-family: Abril fatface;
-    font-size: 400px;
-    color: var(--red);
-    -webkit-text-stroke: 2px var(--blue);
-    float: left;
-    padding-top: calc(5* var(--spacing));
-    padding-left: calc(8* var(--spacing));
-    padding-right: calc(5* var(--spacing));
-    margin: calc(3* var(--spacing));
-    margin-left: var(--inset--left);
-    margin-top: var(--inset--top);
-    margin-bottom: var(--inset--bottom);
-}
 
 .card-4-chapter-first{
     display: block;
