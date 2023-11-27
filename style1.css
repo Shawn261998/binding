@@ -1,0 +1,226 @@
+@import url('cabinet-grotesk.css');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+:root {
+    background: var(--darkgrey);
+    --typography-base: 16px;
+    --spacing: 10px;
+    --border-radius: 10px;
+
+    --orange: #FF3D00;
+    --white: #FFFFFF;
+    --darkgrey: #0B0B0B;
+    --grey:#171717;
+    --light: #7468FF;
+    --darkblue: #1400FF;
+    --green: #00AA30;
+    --darkgreen:#04783B;
+    --purple: #8000FF;
+    --darkred: #7C0004;
+
+    --inset--top:    -0.2em;
+	--inset--bottom: -0.23em;
+	--inset--left:   -0.07em;
+	--inset--right:  -0.06em;
+}
+
+nav { 
+    font-family: bitter;
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--typography-base);
+    padding: var(--spacing);
+    background-color: var(--darkgrey);
+    border: var(--white);
+    border-style: solid;
+    border-radius: var(--border-radius) ;
+    border-width: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: calc(1* var(--spacing));
+}
+
+a { 
+    color: #FFFFFF;
+}
+.top-header { 
+    font-family: CabinetGrotesk-Medium;
+    font-size: calc(1.2* var(--typography-base));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: calc(1* var(--spacing));
+    margin-bottom: calc(1* var(--spacing));
+}
+
+h1{ 
+    font-family: CabinetGrotesk-Bold;
+    font-size: calc(4.3 * var(--typography-base));
+    color: var(--darkgrey);
+}
+
+header { 
+    display: block;
+    background-color: var(--orange);
+    border-radius:  var(--border-radius) ;
+    padding-right:  calc(2* var(--spacing));
+    padding-left:  calc(1.5* var(--spacing));
+    padding-top: var(--spacing);
+    padding-bottom: calc(2*var(--spacing));
+    margin: calc(1* var(--spacing))
+}
+
+.black-line{
+    border: 2px solid;
+    margin-top: calc(1.5 * var(--spacing));
+    margin-bottom: calc(1.5 * var(--spacing));
+    color: var(--darkgrey);
+    width: 90%;
+}
+
+.design-arrows{ 
+    font-size: calc(1.5 * var(--typography-base));
+    font-family: CabinetGrotesk-Bold;
+    color: var(--darkgrey);
+    float: right;
+}
+.subtitle { 
+    font-family: CabinetGrotesk-Medium;
+    font-size: calc(1.5 * var(--typography-base));
+    font-weight: bold;
+    color: var(--darkgrey);
+    text-align: left;
+}
+.intro { 
+    display: block;
+    background-color: black;
+    border-radius: 30px;
+    padding: 60px;
+}
+
+.card { 
+    display: block;
+    background-color: var(--darkgrey);
+    border-radius:  var(--border-radius) ;
+    padding-right:  calc(1.5* var(--spacing));
+    padding-left:  calc(1.5* var(--spacing));
+    padding-top: var(--spacing);
+    padding-bottom: calc(3*var(--spacing));
+    margin: calc(1* var(--spacing))
+}
+.card:nth-child(2) {
+    background-color: var(--grey);
+}
+.card:nth-child(3) {
+    background-color: var(--grey);
+}
+.card:nth-child(4) {
+    background-color: var(--grey);
+}
+
+
+h2 { 
+    font-family: CabinetGrotesk-Bold;
+    font-size: calc(3 * var(--typography-base));
+    color: var(--white);
+    line-height: 1.2;
+}
+h2:nth-child(n-2) {
+    margin-top: calc(4* var(--spacing));
+}
+
+.body-text { 
+    font-family: bitter;
+    font-size: var(--typography-base);
+    color: var(--white);
+    line-height: 1.5;
+    margin-top: 2rem;
+    letter-spacing: .5px;
+}
+.white-line{
+    border: 1px solid;
+    color: var(--white);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+blockquote { 
+    font-family: CabinetGrotesk-Bold;
+    font-size: calc(1.3 * var(--typography-base));
+    color: var(--white);
+    text-align: center;
+}
+.numerical {
+	display: flow-root;
+    width: fit-content;
+    font-family: Abril fatface;
+    font-size: calc(9* var(--typography-base));
+    color: var(--grey);
+    -webkit-text-stroke: 2px white;
+    float: left;
+    margin-right: calc(2*var(--spacing));
+}
+    
+h3 { 
+    font-family: CabinetGrotesk-Bold;
+    font-size: calc(1.2 * var(--typography-base));
+    color: var(--white);
+    line-height: 1.2;
+    letter-spacing: .5px;
+    margin-bottom: calc(1* var(--spacing));
+}
+.card-chapter-1{ 
+    display: block;
+    background-color: var(--darkblue);
+    border-radius:  var(--border-radius) ;
+    padding: calc( 2* var(--spacing));
+    margin-top: calc(3 * var(--spacing));
+}
+.card-chapter-1:hover {
+    filter: drop-shadow(0 0 0.75rem var(--grey));
+  }
+.card-chapter-2{ 
+    display: block;
+    display: block;
+    background-color: var(--green);
+    border-radius:  var(--border-radius) ;
+    padding: calc( 2* var(--spacing));
+    margin-top: calc(3 * var(--spacing));
+}
+.card-chapter-3{ 
+    display: block;
+    display: block;
+    background-color: var(--purple);
+    border-radius:  var(--border-radius) ;
+    padding: calc( 2* var(--spacing));
+    margin-top: calc(3 * var(--spacing));
+}
+li {
+    list-style: disk;
+    list-style-position: outside;
+    font-family: bitter;
+    font-size: calc(.86 * var(--typography-base));
+    color: var(--white);
+    line-height: 1.5;
+    letter-spacing: .5px;
+    padding-top: calc(.2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
+}
+.conclusion {
+    background-color: var(--darkgrey);
+    border-radius: 30px;
+    margin: calc(1* var(--spacing));
+    padding: calc(1* var(--spacing))
+}
+.conclusion-body {
+    font-family: bitter;
+    font-size: calc(.86 * var(--typography-base));
+    color: var(--white);
+    padding-left: calc(7 * var(--spacing));
+    padding-right: calc(5 * var(--spacing));
+    padding-bottom: calc(8 * var( --spacing));
+}
