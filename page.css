@@ -114,8 +114,8 @@
     --darkblue: #1400FF;
     --green: #00AA30;
     --darkgreen:#04783B;
-    --purple: #8000FF;
-    --darkred: #7C0004;
+    --purple: #6200ff;
+    --darkred: #4100aa;
 
     --inset--top:    -0.2em;
 	--inset--bottom: -0.23em;
@@ -231,9 +231,9 @@ h2 {
     letter-spacing: .5px;
 }
 blockquote { 
-    font-family: bitter;
+    font-family: CabinetGrotesk-Bold;
     font-style: italic;
-    font-size: calc(1.2* var(--typography-base));
+    font-size: calc(1.5* var(--typography-base));
     color: var(--white);
     margin-top: calc(2* var(--spacing));
     line-height: 1.5;
@@ -262,4 +262,12 @@ strong {
 
 #underline { 
     text-decoration: underline;
+}
+
+.section-heading { 
+    font-family: CabinetGrotesk-Bold;
+    font-size: calc(1.2 * var(--typography-base));
+    color: var(--white);
+    line-height: 1.2;
+    margin-top: calc(4* var(--spacing));
 }

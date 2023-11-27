@@ -224,7 +224,7 @@ h2 {
     color: var(--white);
     line-height: 1.2;
 }
-h2:nth-child(2) {
+h2:nth-child(n-2) {
     margin-top: calc(4* var(--spacing));
 }
 
@@ -304,8 +304,8 @@ li {
     line-height: 1.5;
     letter-spacing: .5px;
     padding-top: calc(.2* var(--spacing));
+    margin-left: calc(2* var(--spacing));
 }
-
 .conclusion {
     background-color: var(--darkgrey);
     border-radius: 30px;
@@ -320,3 +320,5 @@ li {
     padding-right: calc(5 * var(--spacing));
     padding-bottom: calc(8 * var( --spacing));
 }
+
+#author
