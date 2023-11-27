@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 
-
 @font-face {
     font-family: 'CabinetGrotesk-Thin';
     src: url('/fonts/CabinetGrotesk-Thin.woff2') format('woff2'),
@@ -89,7 +88,6 @@
          font-display: swap;
          font-style: normal;
   }
-  
   
 @mixin lhCrop($line-height) {
     &::before {
