@@ -21,7 +21,8 @@
     --orange: #FF3D00;
     --white: #FFFFFF;
     --darkgrey: #0B0B0B;
-    --grey:#171717;
+    --grey:#222222;
+    --lightgrey:#676767;
     --light: #0300A9;
     --darkblue: #1400FF;
     --green: #00AA30;
@@ -70,6 +71,15 @@ a {
     padding-bottom: calc(3*var(--spacing));
     margin: calc(1* var(--spacing))
 }
+
+.writer { 
+    font-family: CabinetGrotesk-Medium;
+    font-size: calc(1.3 * var(--typography-base));
+    color: var(--white);
+    text-align: left;
+    margin-bottom: calc(2* var(--spacing));
+    margin-top: calc(2* var(--spacing));
+}
 .card-chapter-2{ 
     display: block;
     background-color: var(--green);
@@ -101,7 +111,6 @@ h1{
 .subtitle { 
     font-family: CabinetGrotesk-Medium;
     font-size: calc(1.5 * var(--typography-base));
-    font-weight: bold;
     color: var(--white);
     text-align: left;
 }
@@ -151,13 +160,13 @@ blockquote {
     line-height: 1.5;
 }
 
-.author { 
+/* .author { 
     display: block;
     background-color: var(--light);
     border-radius:  var(--border-radius) ;
     padding: calc(1 * var(--spacing));
     margin-top: calc(3 * var(--spacing));
-}
+} */
 
 .author-text { 
     font-family: bitter;
@@ -192,16 +201,81 @@ strong {
     }
     .grid-wrapper {
         display: grid;
-        width: 100vw;
-        height: 100vh;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "left right"
+        grid-template-rows: 1fr;
     }
-    
+
+    .grid-container-left-page-blue { 
+        display: block;
+        background-color: var(--darkblue);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(3* var(--spacing));
+        padding-left:  calc(3* var(--spacing));
+        padding-top: calc(3*var(--spacing));
+        padding-bottom: calc(3*var(--spacing));
+        margin-left: calc(2* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+    }
+
+    .grid-container-left-page-green { 
+        display: block;
+        background-color: var(--green);
+        border-radius:  var(--border-radius) ;
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(3* var(--spacing));
+        padding-left:  calc(3* var(--spacing));
+        padding-top: calc(3*var(--spacing));
+        padding-bottom: calc(3*var(--spacing));
+        margin-left: calc(2* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        border-left: 2px solid var(--lightgrey);
+    }
+
+    .grid-container-right-page-grey { 
+        display: block;
+        background-color: var(--grey);
+        border-radius:  var(--border-radius) ;
+        margin-right: calc(2* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        border-right: 2px solid var(--lightgrey);
+    }
+    .grid-container-left-page-grey { 
+        display: block;
+        background-color: var(--grey);
+        border-radius:  var(--border-radius) ;
+        margin-left: calc(2* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        border-left: 2px solid var(--lightgrey);
+    }
+
+    .card-chapter-2 { 
+        display: block;
+        background-color: var(--green);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(-1* var(--spacing))
+    }
+
+    .card-chapter { 
+        display: block;
+        background-color: var(--darkblue);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(-1* var(--spacing))
+    }
+
     .white-line { 
         width: 90%;
         display: inline-block;
     }
+
+
     h1{ 
         font-family: CabinetGrotesk-Bold;
         font-size: calc(2.25 * var(--typography-base));
@@ -228,9 +302,52 @@ strong {
     blockquote { 
         font-family: CabinetGrotesk-Bold;
         font-style: italic;
-        font-size: calc(1.2* var(--typography-base));
+        font-size: calc(.8 *var(--typography-base));
         color: var(--white);
-        margin-top: calc(2* var(--spacing));
-        line-height: auto;
+        line-height: 1.5;
+        letter-spacing: .5px;
+        background-color: var(--darkblue);
+        margin-top: calc(1* var(--spacing));
+        border-radius:  var(--border-radius) ;
+        padding: calc(1* var(--spacing));
     }
+
+    .author-text { 
+        font-family: bitter;
+        font-size: calc(.6 *var(--typography-base));
+        color: var(--white);
+        line-height: 1.5;
+        margin-top: calc(1.5* var(--spacing));
+        margin-bottom: calc(1.5* var(--spacing));
+        letter-spacing: .5px;
+    }
+
+    .card { 
+        display: block;
+        background-color: var(--grey);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+
+    .chapter-divider { 
+        border: 1px solid;
+        color: var(--lightgrey);
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .writer { 
+        font-family: CabinetGrotesk-Medium;
+        font-size: calc(1.2 * var(--typography-base));
+        color: var(--white);
+        text-align: left;
+        margin-bottom: calc(2* var(--spacing));
+    }
+
   }
