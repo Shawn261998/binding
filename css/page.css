@@ -218,7 +218,6 @@ strong {
     .grid-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
     }
 
     .grid-container-left-page-blue { 
@@ -325,7 +324,7 @@ strong {
 
     .body-text { 
         font-family: bitter;
-        font-size: calc(.6 *var(--typography-base));
+        font-size: calc(.75 *var(--typography-base));
         color: var(--white);
         line-height: 1.5;
         margin-top: calc(1.5* var(--spacing));
