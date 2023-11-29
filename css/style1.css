@@ -81,7 +81,7 @@ a {
     color: #FFFFFF;
 }
 .top-header { 
-    font-family: CabinetGrotesk-Medium;
+    font-family: CabinetGrotesk-Medium, inter; 
     font-size: calc(1.2* var(--typography-base));
     display: flex;
     justify-content: space-between;

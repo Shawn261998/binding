@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=EB+Garamond:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url(‘https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&display=swap');
 
 
 @font-face {
@@ -235,6 +234,19 @@ strong {
     margin-top: calc(2* var(--spacing));
 }
 
+.special { 
+    font-family: Cardo;
+    font-size: calc(2.2* var(--typography-base));
+    background-color: var(--grey);
+    color: var(--white);
+    padding:calc(2* var(--spacing));
+    margin: var(--spacing);
+    text-align: center;
+    background-color: var(--grey);
+    border-radius:  var(--border-radius) ;
+}
+
+
 
 
 /* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
@@ -460,6 +472,15 @@ strong {
         margin-bottom: calc(2* var(--spacing));
     }
 
+    .special { 
+        font-family: Cardo;
+        font-size: calc(2.2* var(--typography-base));
+        background-color: var(--grey);
+        color: var(--white);
+        padding:calc(2* var(--spacing));
+        text-align: center;
+        margin-top: calc(3* var(--spacing));
+    }
 }
 
 /* THIS IS FOR SMALL LAPTOP SCREEN */
@@ -531,6 +552,11 @@ strong {
     .grid-container-left-page-purple { 
         height: 900px;
 
+    }
+    .special { 
+        font-size: calc(2.9* var(--typography-base));
+        padding:calc(2* var(--spacing));
+        margin-top: calc(7* var(--spacing));
     }
     
 } 
@@ -625,6 +651,12 @@ strong {
     #underline{
         font-size: calc(1 *var(--typography-base));
         text-decoration: underline;
+    }
+
+    .special { 
+        font-size: calc(3.4* var(--typography-base));
+        padding:calc(2* var(--spacing));
+        margin-top: calc(7* var(--spacing));
     }
 } 
 
