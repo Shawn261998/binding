@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 :root {
     background: var(--darkgrey);
     --typography-base: 16px;
@@ -127,8 +130,17 @@ h2 {
     color: var(--white);
     line-height: 1.2;
     padding-bottom: calc(1* var(--spacing));
+}
+
+.intro-head{ 
+    font-family: CabinetGrotesk-Bold;
+    font-size: calc(2.9 * var(--typography-base));
+    color: var(--white);
+    line-height: 1.2;
+    padding-bottom: calc(1* var(--spacing));
     padding-left: calc(3* var(--spacing));
 }
+
 .subject{
     margin-top: calc(4* var(--spacing));
 }

@@ -14,6 +14,10 @@
       margin-top: calc((1 - #{$line-height}) * 0.5em);
     }
   }
+
+html {
+    scroll-behavior: smooth;
+}
 :root {
     background: var(--darkgrey);
     --typography-base: 16px;
@@ -206,7 +210,18 @@ strong {
     margin-top: calc(2* var(--spacing));
 }
 
-@media only screen and (min-width: 450px) {
+
+
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+/* THIS IS FOR TABLET SCREEN (BEST TABLET IS AN IPAD) */
+
+
+@media only screen and (min-width: 650px) {
     nav{ 
         width: 50% ;
         margin-left: auto;
@@ -240,6 +255,7 @@ strong {
         margin-top: calc(3* var(--spacing));
         margin-bottom: calc(3* var(--spacing));
         height: 750px;
+
     }
 
     .grid-container-left-page-green { 
@@ -256,6 +272,7 @@ strong {
         border-left: 2px solid var(--lightgrey);
         margin-bottom: calc(3* var(--spacing));
         height: 750px;
+
     }
 
     .grid-container-left-page-purple { 
@@ -272,6 +289,7 @@ strong {
         border-left: 2px solid var(--lightgrey);
         margin-bottom: calc(3* var(--spacing));
         height: 750px;
+
     }
 
     .grid-container-right-page-grey { 
@@ -303,7 +321,7 @@ strong {
         padding-left:  calc(1* var(--spacing));
         padding-top: var(--spacing);
         padding-bottom: calc(1*var(--spacing));
-        margin: calc(-1* var(--spacing))
+        margin: calc(-1* var(--spacing));
     }
 
     .card-chapter-2 { 
@@ -314,7 +332,7 @@ strong {
         padding-left:  calc(1* var(--spacing));
         padding-top: var(--spacing);
         padding-bottom: calc(1*var(--spacing));
-        margin: calc(-1* var(--spacing))
+        margin: calc(-1* var(--spacing));
     }
 
     .card-chapter { 
@@ -418,4 +436,172 @@ strong {
     }
 
 }
+
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+/* THIS IS FOR SMALL LAPTOP SCREEN */
+
+@media only screen and (min-width: 1024px) {
+
+    html { 
+        margin-left: calc(3* var(--spacing));
+        margin-right: calc(3* var(--spacing));
+        padding-bottom: calc(10* var(--spacing));
+    }
+
+    .writer { 
+        font-size: calc(1.5 * var(--typography-base));
+    }
+
+    h1 {
+        font-size: calc(3 * var(--typography-base));
+        margin-top: calc(3* var(--spacing));
+    }
+
+    .subtitle { 
+        font-size: calc(1.8 * var(--typography-base));
+    }
+
+    h2 { 
+        font-size: calc(1.8 *var(--typography-base));
+    }
+
+    .body-text{ 
+        font-size: calc(.9 *var(--typography-base));
+    }
+
+    blockquote { 
+        font-size: calc(1 *var(--typography-base));
+    }
+
+    .writer-text { 
+        font-size: calc(1 *var(--typography-base));
+    }
+
+    .grid-container-right-page-grey { 
+        padding-left: calc(3* var(--spacing));
+        height: 900px;
+    }
+
+    .grid-container-left-page-grey { 
+        padding-left: calc(3* var(--spacing));
+        height: 900px;
+    
+    }
+
+    .grid-container-left-page-blue { 
+        height: 900px;
+
+    }
+
+    .grid-container-left-page-green { 
+        height: 900px;
+
+    }
+
+    .grid-container-left-page-purple { 
+        height: 900px;
+
+    }
+    
+} 
+
+/* THIS IS FOR BIG LAPTOP SCREEN */
+/* THIS IS FOR BIG LAPTOP SCREEN */
+/* THIS IS FOR BIG LAPTOP SCREEN */
+/* THIS IS FOR BIG LAPTOP SCREEN */
+/* THIS IS FOR BIG LAPTOP SCREEN */
+/* THIS IS FOR BIG LAPTOP SCREEN */
+/* THIS IS FOR BIG LAPTOP SCREEN */
+
+@media only screen and (min-width: 1325px) {
+
+    nav{ 
+        width: 50% ;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: calc(5* var(--spacing));
+        margin-bottom: calc(3* var(--spacing));
+    }
+
+    a{ 
+        font-size: calc(1.7 * var(--typography-base));
+    }
+
+    body { 
+        margin-left: calc(6* var(--spacing));
+        margin-right: calc(6* var(--spacing));
+        padding-bottom: calc(10* var(--spacing));
+
+    }
+
+
+    .writer { 
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    h1 {
+        font-size: calc(4 * var(--typography-base));
+        margin-top: calc(3.5* var(--spacing));
+    }
+
+    .subtitle { 
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    h2 { 
+        font-size: calc(2 *var(--typography-base));
+        margin-bottom: calc(1* var(--spacing));
+    }
+
+    .body-text{ 
+        font-size: calc(1 *var(--typography-base));
+        line-height: 1.75;
+    }
+
+    blockquote { 
+        font-size: calc(1.1 *var(--typography-base));
+    }
+
+    .writer-text { 
+        font-size: calc(1 *var(--typography-base));
+    }
+
+    .grid-container-right-page-grey { 
+        padding-left: calc(3* var(--spacing));
+        height: 920px;
+    }
+
+    .grid-container-left-page-grey { 
+        padding-left: calc(3* var(--spacing));
+        height: 920px;
+    
+    }
+
+    .grid-container-left-page-blue { 
+        height: 920px;
+
+    }
+
+    .grid-container-left-page-green { 
+        height: 920px;
+
+    }
+
+    .grid-container-left-page-purple { 
+        height: 920px;
+
+    }
+
+    #underline{
+        font-size: calc(1 *var(--typography-base));
+        text-decoration: underline;
+    }
+} 
+
+
   
