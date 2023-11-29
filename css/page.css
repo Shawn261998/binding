@@ -5,6 +5,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=EB+Garamond:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url(‘https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&display=swap');
 
+
+@font-face {
+    font-family: Cabinet Grotesk-Regular;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Cabinet Grotesk-Medium;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Cabinet Grotesk-SemiBold;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Cabinet Grotesk-Bold;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 600;
+}
+
 @mixin lhCrop($line-height) {
     &::before {
       content: '';

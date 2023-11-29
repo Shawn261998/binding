@@ -3,9 +3,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 
+
+
+
+@font-face {
+    font-family: Cabinet Grotesk-Regular;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Cabinet Grotesk-Medium;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Cabinet Grotesk-SemiBold;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Cabinet Grotesk-Bold;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 600;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
+
+
 :root {
     background: var(--darkgrey);
     --typography-base: 16px;
