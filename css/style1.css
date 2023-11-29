@@ -9,16 +9,18 @@
     --spacing: 10px;
     --border-radius: 10px;
 
+
     --orange: #FF3D00;
     --white: #FFFFFF;
     --darkgrey: #0B0B0B;
-    --grey:#171717;
-    --light: #7468FF;
+    --grey:#222222;
+    --charcoal:#181818;
+    --light: #0300A9;
     --darkblue: #1400FF;
     --green: #00AA30;
     --darkgreen:#04783B;
-    --purple: #8000FF;
-    --darkred: #7C0004;
+    --purple: #6200ff;
+    --darkred: #4100aa;
 
     --inset--top:    -0.2em;
 	--inset--bottom: -0.23em;
@@ -100,7 +102,14 @@ header {
     padding: 60px;
 }
 
-.card { 
+.card{ 
+    display: block;
+    background-color: var(--charcoal);
+    border-radius:  var(--border-radius) ;
+    padding-top: var(--spacing);
+    margin: calc(1* var(--spacing))
+}
+.card-intro { 
     display: block;
     background-color: var(--darkgrey);
     border-radius:  var(--border-radius) ;
@@ -110,25 +119,24 @@ header {
     padding-bottom: calc(3*var(--spacing));
     margin: calc(1* var(--spacing))
 }
-.card:nth-child(2) {
-    background-color: var(--grey);
-}
-.card:nth-child(3) {
-    background-color: var(--grey);
-}
-.card:nth-child(4) {
-    background-color: var(--grey);
-}
 
 
 h2 { 
     font-family: CabinetGrotesk-Bold;
-    font-size: calc(3 * var(--typography-base));
+    font-size: calc(2.9 * var(--typography-base));
     color: var(--white);
     line-height: 1.2;
 }
-h2:nth-child(n-2) {
+.subject{
     margin-top: calc(4* var(--spacing));
+}
+blockquote { 
+    font-family: Cardo;
+    font-size: calc(1.5* var(--typography-base));
+    color: var(--white);
+    margin-top: calc(2* var(--spacing));
+    line-height: 1.3;
+    padding: calc(1.5* var(--spacing));
 }
 
 .body-text { 
@@ -139,6 +147,7 @@ h2:nth-child(n-2) {
     margin-top: 2rem;
     letter-spacing: .5px;
 }
+
 .white-line{
     border: 1px solid;
     color: var(--white);
@@ -153,12 +162,21 @@ blockquote {
     color: var(--white);
     text-align: center;
 }
+.grid-wrapper-grey {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 4px;
+    background-color: var(--charcoal);
+    margin: var(--spacing);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+}
 .numerical {
 	display: flow-root;
     width: fit-content;
     font-family: Abril fatface;
-    font-size: calc(9* var(--typography-base));
-    color: var(--grey);
+    font-size: calc(8.5* var(--typography-base));
+    color: var(--charcoal);
     -webkit-text-stroke: 2px white;
     float: left;
     margin-right: calc(2*var(--spacing));
@@ -177,11 +195,12 @@ h3 {
     background-color: var(--darkblue);
     border-radius:  var(--border-radius) ;
     padding: calc( 2* var(--spacing));
-    margin-top: calc(3 * var(--spacing));
+    margin-top: calc(1.5 * var(--spacing));
 }
+
 .card-chapter-1:hover {
-    filter: drop-shadow(0 0 0.75rem var(--grey));
-  }
+    box-shadow: 0 0 10px #A8A8A8;
+}
 .card-chapter-2{ 
     display: block;
     display: block;
@@ -190,6 +209,9 @@ h3 {
     padding: calc( 2* var(--spacing));
     margin-top: calc(3 * var(--spacing));
 }
+.card-chapter-2:hover {
+    box-shadow: 0 0 10px #A8A8A8;
+}
 .card-chapter-3{ 
     display: block;
     display: block;
@@ -197,6 +219,10 @@ h3 {
     border-radius:  var(--border-radius) ;
     padding: calc( 2* var(--spacing));
     margin-top: calc(3 * var(--spacing));
+}
+
+.card-chapter-3:hover {
+    box-shadow: 0 0 10px #A8A8A8;
 }
 li {
     list-style: disk;
@@ -222,4 +248,384 @@ li {
     padding-left: calc(7 * var(--spacing));
     padding-right: calc(5 * var(--spacing));
     padding-bottom: calc(8 * var( --spacing));
+}
+
+@media only screen and (min-width: 450px) {
+    nav{ 
+        width: 50% ;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: calc(1.5* var(--spacing));
+        margin-bottom: calc(1.5* var(--spacing));
+    }
+
+    .top-header{ 
+        font-family: CabinetGrotesk-Medium;
+        font-size: calc(1.5* var(--typography-base));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+    }
+
+    h1{ 
+        font-family: CabinetGrotesk-Medium;
+        font-size: calc(8.25 * var(--typography-base));
+        color:  var(--darkgrey);
+    }
+
+    .subtitle { 
+        font-family: CabinetGrotesk-Medium;
+        font-size: calc(2.5 * var(--typography-base));
+        font-weight: bold;
+        color:  var(--darkgrey);
+        text-align: left;
+        margin-top: calc(2.5 * var(--spacing));
+    }
+    .design-arrows{ 
+        font-size: calc(2.3 * var(--typography-base));
+        margin-right:calc(1.8 * var(--spacing));
+        margin-top:calc(-1 * var(--spacing));
+        margin-left:calc(1.8 * var(--spacing));
+
+    }
+
+    h2 { 
+        font-family: CabinetGrotesk-Bold;
+        font-size: calc(2.5 * var(--typography-base));
+        color: var(--white);
+        line-height: 1.2;
+    }
+
+    blockquote { 
+        font-family: Cardo;
+        font-size: calc(1.9* var(--typography-base));
+        color: var(--white);
+        margin-top: calc(-* var(--spacing));
+        line-height: 1.3;
+        padding: calc(1.3* var(--spacing));
+    }
+
+    .subject { 
+        display: block;
+        font-family:CabinetGrotesk-Medium;
+        background-color:  var(--charcoal);
+        border-radius:  var(--border-radius);
+        font-size: calc(4 * var(--typography-base));
+        /* padding-bottom: calc(3*var(--spacing)); */
+
+    }
+
+    .numerical {
+        font-size: calc(15* var(--typography-base));
+        padding-right: calc(11* var(--spacing));
+    }
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4px;
+    }
+
+    .grid-container-right { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-left: calc(2* var(--spacing));
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(3* var(--spacing));
+        margin-bottom: calc(3* var(--spacing));
+    }
+
+    .grid-container-left { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-left: calc(2* var(--spacing));
+        margin-top: calc(3* var(--spacing));
+        margin-bottom: calc(3* var(--spacing));
+    }
+
+    .grid-wrapper-grey {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4px;
+        background-color: var(--charcoal);
+        margin: var(--spacing);
+        border-radius: var(--border-radius);
+    }
+
+    .grid-container-right-page-grey { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+
+    }
+    .grid-container-left-page-grey { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+    }
+    .grid-wrapper-grey-rounded{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1px;
+        margin: var(--spacing);
+    }
+    .grid-container-right-page-grey-rounded{ 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        background-color: var(--charcoal);
+        margin-left: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+        padding-left: var(--spacing);
+    }
+    .grid-container-left-page-grey-rounded{ 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        background-color: var(--charcoal);
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+        padding-left: var(--spacing);
+    }
+
+    .card-chapter-1 { 
+        display: block;
+        background-color: var(--darkblue);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+
+    .card-chapter-3 { 
+        display: block;
+        background-color: var(--purple);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+
+    .card-chapter-2 { 
+        display: block;
+        background-color: var(--green);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+    .white-line { 
+        width: 90%;
+        margin: auto;
+    }
+    
+    .body-text { 
+        font-family: bitter;
+        font-size: calc(.75 *var(--typography-base));
+        color: var(--white);
+        line-height: 1.5;
+        margin-top: calc(1.5* var(--spacing));
+        letter-spacing: .5px;
+    }
+
+    footer{
+        margin-bottom: calc(3* var(--spacing));
+    }
+
+}
+  
+
+@media only screen and (min-width: 1024px) {
+
+    nav{ 
+        width: 50% ;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: calc(1.5* var(--spacing));
+        margin-bottom: calc(1.5* var(--spacing));
+        font-size: calc(1 * var(--typography-base));
+    }
+
+    h1{ 
+        font-family: CabinetGrotesk-Medium;
+        font-size: calc(10 * var(--typography-base));
+        color:  var(--darkgrey);
+    }
+
+    .subtitle { 
+        font-family: CabinetGrotesk-Medium;
+        font-size: calc(2.5 * var(--typography-base));
+        font-weight: bold;
+        color:  var(--darkgrey);
+        text-align: left;
+        margin-top: calc(2.5 * var(--spacing));
+    }
+    .design-arrows{ 
+        font-size: calc(3* var(--typography-base));
+        margin-right:calc(1.8 * var(--spacing));
+        margin-top:calc(-1 * var(--spacing));
+        margin-left:calc(1.8 * var(--spacing));
+
+    }
+
+    h2 { 
+        font-family: CabinetGrotesk-Bold;
+        font-size: calc(3 * var(--typography-base));
+        color: var(--white);
+        line-height: 1.2;
+    }
+
+    blockquote { 
+        font-family: Cardo;
+        font-size: calc(1.9* var(--typography-base));
+        color: var(--white);
+        margin-top: calc(-* var(--spacing));
+        line-height: 1.3;
+        padding: calc(1.3* var(--spacing));
+    }
+
+    .subject { 
+        display: block;
+        font-family:CabinetGrotesk-Medium;
+        background-color:  var(--charcoal);
+        border-radius:  var(--border-radius);
+        font-size: calc(4 * var(--typography-base));
+        /* padding-bottom: calc(3*var(--spacing)); */
+
+    }
+
+    .numerical {
+        font-size: calc(15* var(--typography-base));
+        padding-right: calc(20* var(--spacing));
+    }
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4px;
+    }
+
+    .grid-container-right { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-left: calc(2* var(--spacing));
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(3* var(--spacing));
+        margin-bottom: calc(3* var(--spacing));
+    }
+
+    .grid-container-left { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-left: calc(2* var(--spacing));
+        margin-top: calc(3* var(--spacing));
+        margin-bottom: calc(3* var(--spacing));
+    }
+
+    .grid-wrapper-grey {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4px;
+        background-color: var(--charcoal);
+        margin: var(--spacing);
+        border-radius: var(--border-radius);
+    }
+
+    .grid-container-right-page-grey { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+
+    }
+    .grid-container-left-page-grey { 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+    }
+    .grid-wrapper-grey-rounded{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1px;
+        margin: var(--spacing);
+    }
+    .grid-container-right-page-grey-rounded{ 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        background-color: var(--charcoal);
+        margin-left: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+        padding-left: var(--spacing);
+    }
+    .grid-container-left-page-grey-rounded{ 
+        display: block;
+        border-radius:  var(--border-radius) ;
+        background-color: var(--charcoal);
+        margin-right: calc(1* var(--spacing));
+        margin-top: calc(1* var(--spacing));
+        margin-bottom: calc(1* var(--spacing));
+        padding-left: var(--spacing);
+    }
+
+    .card-chapter-1 { 
+        display: block;
+        background-color: var(--darkblue);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+
+    .card-chapter-3 { 
+        display: block;
+        background-color: var(--purple);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+
+    .card-chapter-2 { 
+        display: block;
+        background-color: var(--green);
+        border-radius:  var(--border-radius) ;
+        padding-right:  calc(1.2* var(--spacing));
+        padding-left:  calc(1* var(--spacing));
+        padding-top: var(--spacing);
+        padding-bottom: calc(1*var(--spacing));
+        margin: calc(1* var(--spacing))
+    }
+    .white-line { 
+        width: 90%;
+        margin: auto;
+    }
+    
+    .body-text { 
+        font-family: bitter;
+        font-size: calc(1 *var(--typography-base));
+        color: var(--white);
+        line-height: 1.5;
+        margin-top: calc(1.5* var(--spacing));
+        letter-spacing: .5px;
+    }
+
+    footer{
+        margin-bottom: calc(3* var(--spacing));
+    }
+
 }
